@@ -2,6 +2,11 @@ Author: Kaden Culp
 
 A light, daily notebook that handles archival and compilation.
 
+Running archive.py will do the following:
+Move the contents of today's notebook to an archive subdirectory.
+Move the contents of tomorrow's notebook to today's notebook.
+Copy the template notebook to tomorrow's notebook.
+Compile the contents of all the archived notebooks and write them to a directory.
 
 Directories:
 
