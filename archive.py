@@ -75,10 +75,7 @@ def write_files(compiled_files, directory):
 
 if __name__ == '__main__':
     today_path = today_archive_path('daily archive')
-    try:
-        os.mkdir(today_path)
-    except FileExistsError as e:
-        raise e
+    os.mkdir(today_path)
     move_files('today', today_path)
     move_files('tomorrow', 'today')
     copy_files('template', 'tomorrow')
